@@ -1,0 +1,113 @@
+/* Вся страница задачи */
+.page {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Белая карточка (основной контейнер) */
+.card {
+    width: 100%;
+    max-width: 1100px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px 32px 32px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* Верхняя строка: заголовок + крестик */
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/* Заголовок задачи */
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Кнопка закрытия */
+.close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: #333;
+    padding: 4px;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Лейбл "Description" */
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* Поле описания (textarea) */
+.textarea {
+    width: 100%;
+    min-height: 280px;
+    resize: vertical;
+
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: inherit;
+    color: #000000;
+
+    border: 1px solid #000000;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Фокус — аккуратно, без браузерной жести */
+.textarea:focus {
+    border-color: var(--color-secondary);
+}
+
+/* Текст под полем (подсказка / fallback) */
+.hint {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Если задача не найдена */
+.notFound {
+    padding: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Удаление задачи (только для Backlog) */
+.deleteButton {
+    margin-top: 24px;
+    background: var(--color-danger);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.deleteButton:hover {
+    background: #CF513D;
+}

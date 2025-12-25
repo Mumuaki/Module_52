@@ -1,0 +1,28 @@
+.footer {
+  background: var(--color-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  ;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.left {
+  display: flex;
+  gap: 24px;
+}
+
+.item {
+  white-space: nowrap;
+}
+
+.right {
+  color: #ffffff;
+  font-size: 18px;
+  opacity: 1;
+}

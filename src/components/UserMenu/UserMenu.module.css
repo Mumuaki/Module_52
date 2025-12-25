@@ -1,0 +1,59 @@
+.root {
+  position: relative;
+}
+
+.trigger {
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #ffffff;
+}
+
+.arrowUp {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #ffffff;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 6px;
+  min-width: 140px;
+}
+
+.item {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.item:hover {
+  text-decoration: underline;
+  color: #0067a3;
+}

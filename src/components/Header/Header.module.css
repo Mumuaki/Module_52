@@ -1,0 +1,116 @@
+.header {
+  height: 60px;
+  background: rgba(var(--color-secondary-rgb), 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-text-light);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.userMenu:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+
+.arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--color-text-light);
+  transition: transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.arrowDown.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown меню */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  overflow: hidden;
+  z-index: 1001;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menuItem {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.menuItem:hover {
+  color: var(--color-secondary);
+  background: #f5f5f5;
+}
